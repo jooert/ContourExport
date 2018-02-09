@@ -1,0 +1,105 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3738,         97]
+NotebookOptionsPosition[      3246,         79]
+NotebookOutlinePosition[      3580,         94]
+CellTagsIndexPosition[      3537,         91]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{"SetDirectory", "[", 
+  RowBox[{"NotebookDirectory", "[", "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"<<", "../ContourExport.wl"}]}], "Input",
+ CellChangeTimes->{{3.7177557349499483`*^9, 3.7177557414982862`*^9}, {
+  3.7177571001081753`*^9, 3.7177571023711967`*^9}, {3.7177571539521627`*^9, 
+  3.717757193787842*^9}},ExpressionUUID->"23415675-7d79-4ace-aa96-\
+c7bd7bc93196"],
+
+Cell[BoxData[{
+ RowBox[{"SeedRandom", "[", "1337", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"plot", "=", 
+  RowBox[{"ContourPlot", "[", 
+   RowBox[{
+    RowBox[{"Evaluate", "[", 
+     RowBox[{"Sum", "[", 
+      RowBox[{
+       RowBox[{"Sin", "[", 
+        RowBox[{
+         RowBox[{"RandomReal", "[", 
+          RowBox[{"5", ",", "2"}], "]"}], ".", 
+         RowBox[{"{", 
+          RowBox[{"x", ",", "y"}], "}"}]}], "]"}], ",", 
+       RowBox[{"{", "5", "}"}]}], "]"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", "0", ",", "5"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"y", ",", "0", ",", "4"}], "}"}], ",", 
+    RowBox[{"FrameLabel", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"None", ",", "y"}], "}"}]}]}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.717755660762376*^9, 3.7177556869820967`*^9}, {
+  3.7177557240195723`*^9, 3.7177557247335567`*^9}, {3.727160451682239*^9, 
+  3.727160480538847*^9}, {3.7271608010311604`*^9, 3.727160833740822*^9}, {
+  3.727160890808672*^9, 3.727160894736457*^9}, {3.72716285859978*^9, 
+  3.727162858813501*^9}, {3.7271642535566187`*^9, 3.727164253765813*^9}, {
+  3.727164745073979*^9, 3.727164747889329*^9}, {3.727171151333267*^9, 
+  3.727171169414998*^9}},ExpressionUUID->"32fbcce2-e815-4df0-84da-\
+cfcbe22f9c23"],
+
+Cell[BoxData[
+ RowBox[{"ContourExport", "[", 
+  RowBox[{"\"\<randomsin\>\"", ",", "plot", ",", 
+   RowBox[{"ImageSize", "\[Rule]", "500"}], ",", 
+   RowBox[{"AspectRatio", "\[Rule]", "2"}], ",", 
+   RowBox[{"SampleStep", "\[Rule]", "2"}], ",", 
+   RowBox[{"WriteTikz", "\[Rule]", "Standalone"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.717755728147376*^9, 3.717755730791719*^9}, {
+   3.7177572224765463`*^9, 3.717757278734845*^9}, {3.7177575594258966`*^9, 
+   3.7177575637365637`*^9}, {3.71775768501086*^9, 3.7177576851240797`*^9}, {
+   3.717757718625154*^9, 3.717757718809082*^9}, {3.727169720752335*^9, 
+   3.7271697435909863`*^9}, {3.727170650846406*^9, 3.727170654897122*^9}, {
+   3.727171277954981*^9, 3.727171312307478*^9}, {3.7271713502764378`*^9, 
+   3.727171358421245*^9}, {3.7271719942181787`*^9, 3.727172008928739*^9}, 
+   3.72717204771319*^9, {3.727172167278277*^9, 3.727172189541285*^9}, {
+   3.727172236622128*^9, 
+   3.727172236789813*^9}},ExpressionUUID->"ac99aa3f-5f96-4002-9d4d-\
+aefb5caff04b"]
+},
+WindowSize->{510, 1256},
+WindowMargins->{{2, Automatic}, {0, Automatic}},
+FrontEndVersion->"11.1 for Linux x86 (64-bit) (March 13, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 401, 7, 57, "Input", "ExpressionUUID" -> \
+"23415675-7d79-4ace-aa96-c7bd7bc93196"],
+Cell[962, 29, 1264, 29, 82, "Input", "ExpressionUUID" -> \
+"32fbcce2-e815-4df0-84da-cfcbe22f9c23"],
+Cell[2229, 60, 1013, 17, 58, "Input", "ExpressionUUID" -> \
+"ac99aa3f-5f96-4002-9d4d-aefb5caff04b"]
+}
+]
+*)
+
